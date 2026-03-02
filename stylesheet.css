@@ -2,18 +2,61 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+body{
+    margin: 0
+}
+
 .top{
     display: flex;
     background-color: #1F2937;
     padding: 10px 190px 10px 190px;
+    flex-direction: column;
+    height: 500px;
 }
+
 
 .header{
     display: flex;
     justify-content: space-between;
-    flex: 1 1 auto;
     align-items: center;
 }
+
+.information{
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.information img{
+    width: 200px;
+    height: 300px;
+}
+.midleft{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.midleft h1{
+    font-size: 40px;
+    width: 400px;
+}
+
+.midleft p{
+    width: 500px;
+    margin-top: -15px;
+}
+
+.midleft button{
+    background-color: #4c73f5;
+    color: white;
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+}
+
 
 .header .left{
     display: flex;
@@ -41,4 +84,27 @@
 .right a{
     color: white;
     text-decoration: none;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.Animal{
+    display: flex;
+    width: 200px;
+    height: 250px;
+    border: blue solid 3px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Animal img{
+    width: 180px;
+    height: 190px;
+    
 }
