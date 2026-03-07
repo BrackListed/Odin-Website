@@ -28,10 +28,19 @@ body{
     padding: 20px;
 }
 
-.information img{
-    width: 200px;
-    height: 300px;
+.image{
+    background-image: url(images/odin\ background.png);
+    background-size:  cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    outline: goldenrod solid 2px;
+    min-height: 300px;
 }
+.image img{
+    width: 200px;
+    height: 280px;
+}
+
 .midleft{
     display: flex;
     flex-direction: column;
@@ -55,6 +64,11 @@ body{
     width: 100px;
     height: 30px;
     border-radius: 8px;
+}
+
+button:hover{
+    background-color: gray;
+    cursor:pointer;
 }
 
 
@@ -89,22 +103,120 @@ body{
 .cards{
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 .Animal{
     display: flex;
     width: 200px;
     height: 250px;
-    border: blue solid 3px;
-    border-radius: 8px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    transition: 0.5s;
+}
+
+.Animal:hover {
+    transform: scale(1.20);
+    z-index: 2;
 }
 
 .Animal img{
     width: 180px;
     height: 190px;
-    
+    border: blue solid 2px;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.lowerhalf{
+    display: flex;
+    background-color: #cbcdd1;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote{
+    display: flex;
+    width: 700px;
+    height: 300px;
+    background-image: url('https://wallpapers.com/images/hd/erwin-smith-riding-horse-lmh72ucgdh0jxpku.jpg');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quote .text, .quote .citation{
+    color: white;
+    font-family: Helvetica;
+}
+
+.quote .text{
+    font-size: 50px;
+    font-style: italic;
+}
+
+.quote .citation{
+    display: flex;
+    width: 485.750px;
+    justify-content: flex-end;
+    font-weight: bold;
+}
+
+.bottom{
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom .container{
+    display: flex;
+    background-color: #4c73f5;
+    border-radius: 10px;
+    height: 200px;
+    padding: 48px;
+    width: 1000px;
+    justify-content: space-evenly;
+}
+
+.container .left{
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    color: white;
+}
+
+.left h4{
+    margin-bottoM: -8px;
+    font-size: 40px;
+}
+
+.container .right{
+    display: flex;
+    align-items: center;
+}
+
+.container button{
+    border: white solid 2px;
+    background-color: #4c73f5;
+    color: white;
+    border-radius: 8px;
+    width: 130px;
+    height: 40px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    color: white;
+    height: 32px;
 }
